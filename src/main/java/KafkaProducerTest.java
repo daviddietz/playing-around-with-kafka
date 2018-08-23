@@ -13,8 +13,9 @@ public class KafkaProducerTest {
         properties.setProperty("key.serializer", StringSerializer.class.getName());
         properties.setProperty("value.serializer", StringSerializer.class.getName());
 
-        // producer acks
+        // producer acknowledgements or acks
         properties.setProperty("acks", "1");
+
         properties.setProperty("retries", "3");
         properties.setProperty("linger.ms", "1");
 
